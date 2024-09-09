@@ -1,0 +1,2 @@
+# Khahnhax.dev
+NguyenQuocKhanh.dev
