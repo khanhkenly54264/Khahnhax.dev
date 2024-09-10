@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="Lap3.css"> -->
+    <title>Đăng Ký</title>
+</head>
+<body>
+        <form action="" method="post">
+          <table with="500px">
+              <caption><h3>Đăng ký thành viên</h3></caption>
+                <tr>
+                  <td width="150">Họ và tên:</td>
+                  <td><input type="text" id="full-name" name="full-name" size="30" required></td>
+                </tr>
+              
+                <tr>
+                  <td>Tên đăng nhập:</td>
+                  <td><input type="text" id="username" name="username" size="30" required></td>
+                </tr>
+              
+                <tr>
+                  <td>Mật khẩu:</td>
+                  <td><input type="password" id="password" name="password" size="30" required></td>
+                </tr>
+              
+                <tr>
+                  <td>Ảnh đại diện:</td>
+                  <td><input type="file" id="avatar" name="avatar" size="30"></td>
+                </tr>
+              
+                <tr>
+                  <td>Email:</td>
+                  <td><input type="email" id="email" name="email" size="30" required></td>
+                </tr>
+              
+                <tr>
+                  <td>Giới tính:</td>
+                  <td>
+                    <input type="radio" name="gender" id="male" value="1" />
+                    <label for="male">Nam</label>
+                    <input type="radio" name="gender" id="female" value="0" />
+                    <label for="female">Nữ</label>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td>Sở thích:</td>
+                  <td>
+                    <input type="checkbox" name="bongda" id="bongda" />
+                    <label for="bongda">Bóng đá</label>
+                    <input type="checkbox" name="xemphim" id="xemphim" />
+                    <label for="xemphim">Xem phim</label>
+                    <input type="checkbox" name="dulich" id="dulich" />
+                    <label for="dulich">Du lịch</label>
+                    <input type="checkbox" name="boi" id="boi" />
+                    <label for="boi">Bơi</label>
+                    <input type="checkbox" name="nghenhac" id="nghenhac" />
+                    <label for="nghenhac">Nghe nhạc</label>
+                    <input type="checkbox" name="racing" id="racing" />
+                    <label for="racing">Đua xe</label>
+                </td>
+
+                </tr>
+              
+                <tr>
+                  <td>Quê quán:</td>
+                  <td>
+                    <select name="province" id="province">
+                      <option value="">---Chọn tỉnh---</option>>
+                      <option value="">Hà nội</option>>
+                      <option value="">Hải phòng</option>>
+                      <option value="">Quảng ninh</option>>
+                      <option value="">Nam định</option>>
+                      <option value="">Tuyên quang</option>>
+                      <option value="">Hà Giang</option>>
+                      <option value="">Huế</option>>
+                      <option value="">Cao Bằng</option>>
+                      <option value="">Hồ Chí Minh</option>>
+                    </select>
+                  </td>
+                </tr>
+              
+                <tr>
+                  <td>Địa chỉ:</td>
+                  <td><input type="text" id="address" name="address" size="30"></td>
+                </tr>
+              
+                <tr>
+                  <td>Số điện thoại:</td>
+                  <td><input type="tel" id="phone" name="phone" size="30"></td>
+                </tr>
+              
+                <tr>
+                  <td>Mô tả bản thân:</td>
+                  <td><textarea id="description" name="description" cols="40" rows="5"></textarea></td>
+                </tr>
+              
+                <tr>
+                  <td colspan="2" align="center">
+                  <button type="submit">Đăng ký</button>
+                  <button type="reset">Làm lại</button>
+                  </td>
+                </tr>
+          </table>
+        </form>
+</body>
+</html>
