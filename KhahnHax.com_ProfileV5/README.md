@@ -1,6 +1,6 @@
 ## Release KhahnHax.Com
 
-## Mô Tả V5.0.0
+## Mô Tả V5
 
 * Giao diện thân thiện, được tối ưu hoá để không gây ra tuột khung hình (lag)
 * Panel Setting đã được thêm vào, tuỳ chỉnh các cài đặt nho nhỏ của trang.
