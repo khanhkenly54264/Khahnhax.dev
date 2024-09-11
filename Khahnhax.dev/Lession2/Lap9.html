@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"], 
+        input[type="date"], 
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .flex-item {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Todo List Form</h2>
+        <form>
+            <label for="item">Item</label>
+            <input type="text" id="item" name="item" placeholder="What the hell you want to do?🤬" required>
+
+            <label for="description">Description</label>
+            <td><textarea id="description" name="description" cols="40" rows="5" placeholder="Tell me what is that!😡"></textarea></td>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority" required>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+
+                <div class="flex-item">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="due-date">Due Date</label>
+            <input type="date" id="due-date" name="due-date" required>
+
+            <div class="status">
+                <label for="status">Done:</label>
+                <input type="checkbox" id="status" name="status">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
