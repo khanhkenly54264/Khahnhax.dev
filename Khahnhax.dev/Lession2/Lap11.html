@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d8d8d8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgb(255, 0, 0);
+            width: 365px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff0000;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display:block;
+            margin-bottom: 3px;
+            font-weight: bold;
+            color: rgb(10, 208, 208);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            text-align: center;
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1;
+            border: 1px solid #f90101;
+            border-radius: 5px;
+            box-sizing: border-box;
+            box-shadow: 0 1px 6px rgb(52, 190, 203);
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        input[type="text"], 
+        input[type="password"] {
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ff0000;
+            border-radius: 5px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff0000;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #03d9ff;
+        }
+
+        .get-password {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .get-password a {
+            color: #ff0000;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .get-password a:hover {
+            text-decoration:solid;
+            color:rgb(0, 255, 51)
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Facebook Login</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email or Phone</label>
+                    <input type="text" id="email" name="email" placeholder="Email or Phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="keep-logged-in" name="keep-logged-in">
+                <label for="keep-logged-in">Keep me logged in</label>
+            </div>
+
+            <button type="submit">Log In</button>
+        </form>
+
+        <div class="get-password">
+            <p><a href="#">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="#">Create New Account</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
