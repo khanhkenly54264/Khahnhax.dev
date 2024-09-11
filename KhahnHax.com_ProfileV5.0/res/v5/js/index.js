@@ -867,5 +867,5 @@ messages.forEach(msg => {
     }, img.onload = function() {
         startSakura()
     };
-    // End ThanhDieuV5
+    // End 
 });
