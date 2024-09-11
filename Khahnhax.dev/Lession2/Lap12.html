@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cccdcd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(255, 1, 111);
+            width: 360px;
+        }
+
+        h2 {
+            color: #ff00d0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ff00ea;
+            border-radius: 5px;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgb(255, 1, 90);
+        }
+
+        .gender-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .gender-row .form-group {
+            flex: 1;
+            margin: 0;
+        }
+
+        .gender-group {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .gender-group div {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ea00ff;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #00ff11;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .links a {
+            color: #fb01ff;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration:solid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Create New Account</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="gender-row">
+                <div class="form-group gender-group">
+                    <label>Gender</label>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="links">
+            <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
