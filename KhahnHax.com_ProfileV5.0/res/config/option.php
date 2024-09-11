@@ -22,7 +22,7 @@ class KhahnHaxHeader implements KhahnHaxConfigInterface {
     public $bio5 = "Ăn, ngủ, làm và chơi game 🎮";
     public $bio6 = "Kẻ khờ dại tin vào tình yêu ✨";
     public $SocialNetworks = [
-        "facebook" => "https://facebook.com/Pi.harry.0628"
+        "facebook" => "https://facebook.com/Pi.harry.0628",
         "instagram" => "https://www.instagram.com/khahn_khong_nghien",
         "tiktok" => "https://www.tiktok.com/",
         "telegram" => "https://t.me/Khahnhax.com"
