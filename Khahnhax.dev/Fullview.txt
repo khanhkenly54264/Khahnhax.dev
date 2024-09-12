@@ -1,2 +1,16 @@
-t3-10/9/2024
-Lesson 2: HTML - table
+    ● t2-9/9/2024
+
+Lesson 1: Setting
+--------------------------------   
+    ● t3-10/9/2024
+
+Lesson 2: HTML - Table
+--------------------------------
+    ● t5-12/9/2024
+
+Lesson 3: HMTL - Form - Style
+Lesson 4: Style - CSS
+--------------------------------
+    ● t2-16/9/2024
+
+Lesson 5
