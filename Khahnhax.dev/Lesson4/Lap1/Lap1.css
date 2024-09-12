@@ -1,0 +1,14 @@
+.main {
+    text-align: left;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.container1 .ul1 .li1 {
+    color: blue;
+}
+
+.container2 .ul2 .li2 {
+    list-style: count;
+    color: red;
+}

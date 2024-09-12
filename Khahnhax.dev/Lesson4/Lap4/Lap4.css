@@ -21,16 +21,23 @@ h2 {
     color: #00e4f4;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-#email, #password{
+#email, #password {
     width: 300px;
     padding: 10px;
     margin-bottom: 15px;
+    border: 1px solid #980202;
+    border-radius: 5px;
+}
+
+.user-name {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 15px;
+}
+
+#first-name, #last-name {
+    width: 150px;
+    padding: 10px;
     border: 1px solid #980202;
     border-radius: 5px;
 }
@@ -44,9 +51,4 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 17px;
-}
-
-.text-center a {
-    color: #2ad438;
-    text-decoration: none;
 }
