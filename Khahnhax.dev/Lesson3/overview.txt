@@ -1,0 +1,16 @@
+Các thẻ bố cục nội dung
+---------
+Khối lớn
+- header
+    nav
+- nav
+- aside
+- acticle
+- section
+    section, acticle
+- footer
+----------
+Khối con:
+- div -> khối
+- span -> khối trên dòng
+----------
