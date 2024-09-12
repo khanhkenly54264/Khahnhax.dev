@@ -10,25 +10,40 @@
         font-family: Arial, sans-serif;
         text-align: center;
     }
-    a{
+    header,section,footer{
+        margin:1rem;
+        padding:1rem;
+        border:1px solid black;
+        border-radius:.25rem;
+    }
+    a {
+        color: rgb(255, 2, 230);
         text-decoration: none;
+        padding: 10px 20px;
+        border:1px solid red;
+        background-color: rgb(234, 255, 0);
     }
     ul{
-        display:flex;
-        padding: 0;
-        margin: 0;
-        justify-content:center;
-        width: fit-content;
-        margin: 20px auto;
+        list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #ee1616;
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+            width: fit-content;
+            margin: 20px auto;
     }
     li{
         list-style: none;
         margin: 0;
-        justify-content:space-between ;
+    }
+    section{
+        min-height: 400px;
     }
     li a:hover {
         text-decoration: none;
-        color: #f61010;
+        color: #00ff1e;
     }
 </style>
 <body>
@@ -52,7 +67,8 @@
     </section>
 
     <footer>
-        Bản quyền thuộc về Viện Công Nghệ Và Đào Tạo DevMaster Academy
+        <p>Bản quyền thuộc về Viện Công Nghệ Và Đào Tạo DevMaster Academy</p>
+        <address>Tòa Viện Công Nghệ, số 25 phố Vũ Ngọc Phan, Láng Hạ, Đống Đa, Hà Nội</address>
     </footer>
 </body>
 </html>
