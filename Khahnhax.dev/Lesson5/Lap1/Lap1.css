@@ -7,6 +7,7 @@ nav ul{
     display:flex;
     list-style: none;
     background-color: #cccc;
+    cursor: auto;
 }
 
 nav ul li{

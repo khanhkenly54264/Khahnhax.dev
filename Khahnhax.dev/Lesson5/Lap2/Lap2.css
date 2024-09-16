@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin:1rem;
+    border:2px solid;
+    width:10rem;
+    background-color: #cccc;
+}
+
+a{
+    text-decoration: none;
+    color:#232323;
+}
+
+nav ul{
+    list-style: none;
+    border-top:2px solid;
+}
+
+nav ul li{
+    border-bottom: 1px solid #888;
+}
+
+h3 {
+    background-color: red;
+    color: yellow;        
+    padding: 10px;         
+    text-align: center;    
+    font-size: 20px;       
+}
+
+nav h3{
+    padding:.3rem;
+}
+
+nav a{
+    display:block;
+    padding:.5rem;
+}
+
+nav a:hover{
+    background-color: green;
+    color:gold;
+}
