@@ -1,11 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
 }
 
 nav {
@@ -15,7 +10,6 @@ nav {
 .menu {
     list-style-type: none;
     display: flex;
-    padding: 10px;
 }
 
 .menu li {
@@ -23,21 +17,16 @@ nav {
     border-right:1px solid red;
 }
 
-ul li:last-child{
-    border-right:0;
-}
-
 .menu a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 10px;
     display: block;
-    background-color: #ffffff;
 }
 
 .menu a:hover {
     background-color: green;
-    color:#ffff
+    color:#ffffffcc;
 }
 
 .submenu {
@@ -51,8 +40,7 @@ ul li:last-child{
     margin: 0;
     min-width: 200px;
     border: 2px solid #cccc;
-    border-radius: 5px;
-    opacity:.85;
+    border-radius: 5px
 }
 
 .submenu li a {
