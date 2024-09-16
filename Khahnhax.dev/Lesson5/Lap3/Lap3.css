@@ -23,6 +23,10 @@ nav {
     border-right:1px solid red;
 }
 
+ul li:last-child{
+    border-right:0;
+}
+
 .menu a {
     text-decoration: none;
     color: rgb(0, 0, 0);
