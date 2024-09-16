@@ -13,4 +13,4 @@ Lesson 4: Style - CSS
 --------------------------------
     ● t2-16/9/2024
 
-Lesson 5
+Lesson 5: CSS 
