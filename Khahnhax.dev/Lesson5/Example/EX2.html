@@ -1,0 +1,52 @@
+<head>
+    <title>Bộ chọn</title>
+</head>
+
+<style>
+   h2 + p{
+    background-color: aqua;
+   }
+   h2 ~ p{
+    color:blue;
+   }
+   p:hover{
+    background-color: violet;
+    cursor: pointer;
+   }
+
+   /* :List */
+   p:first-child, p:last-child{
+    font-size: 2rem;
+    border:1px solid green;
+   }
+   /* Phần tử chẵn */
+   p:nth-child(2n){
+    border-bottom: 2px solid green;
+   }
+   /* Phần thử lẻ */
+   p:nth-child(2n+1){
+    border-bottom: 2px solid blue;
+   }
+</style>
+
+<body>
+    <header>
+        <h1>Các bộ chọn thông dụng</h1>
+    </header>
+
+    <section id="zone1">
+        <p>Đoạn 0</p>
+        <h2>Tag01+Tag02</h2>
+        <p>Đoạn 1</p>
+        <p>Đoạn 2</p>
+        <p>Đoạn 3</p>
+        <p>Đoạn 4</p>
+        <h3>====</h3>
+        <p>Đoạn 5</p>
+        <div>
+            <p>Đoạn 6</p>
+        </div>
+    </section>
+</body>
+
+</html>

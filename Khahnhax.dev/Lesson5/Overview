@@ -1,0 +1,5 @@
+Làm việc với css
+- Nhúng css vào trang HTML
++ Style inline: Phạm vi sử dụng với HTML hiện tại
++ Tag style: Phạm vi sử dụng trên toàn bộ HTML hiện tại
++ External style ( file css ): sử dụng trên toàn bộ sie
