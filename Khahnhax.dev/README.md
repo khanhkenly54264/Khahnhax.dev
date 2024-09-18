@@ -1,4 +1,4 @@
 # Khahnhax.dev
-NguyenQuocKhanh.dev/
-Quỷ Đá Coding
+NguyenQuocKhanh.dev / 
+Quỷ Đá Coding 
 @from/KhahnHax.com
