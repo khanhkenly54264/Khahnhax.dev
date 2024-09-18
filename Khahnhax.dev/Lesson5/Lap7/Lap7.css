@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.about,#our-location, .classes, #signup {
+    color:green;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about p {
+    font-size: 16px;
+    color: #555;
+}
+
+.locations ul {
+    
+}
+
+.locations li {
+    margin-bottom: 10px;
+}
+
+.locations ul li ul {
+    padding-left: 20px;
+}
+
+
+.classes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.classes th, .classes td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
+    text-align: center;
+}
+
+.classes th, .classes td, a{
+    text-decoration: none;
+}
+
+.classes th {
+    background-color: #bebebe;
+}
+
+.signup{
+    color:red;
+    padding: 20px;
+    margin: 20px;
+}
+
+.signup label {
+    display: inline-block;
+    width: 80px;
+}
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup select,
+.signup textarea {
+    width: calc(100% - 100px);
+    margin-bottom: 10px;
+}
+
+.signup input[type="submit"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.signup input[type="submit"]:hover {
+    background-color: #d32f2f;
+}
+
+fieldset{
+    padding: 20px;
+    margin: 20px;
+}
+
+#experience{
+    padding: 0px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #f44336;
+}
+
+#TW{
+    color:aqua
+}
+
+#FB{
+    color:blue;
+
+}
+
+#Flickr{
+    color:darkmagenta
+}
