@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 22px;
+}
+body{
+    background-color: #ccc;
+    font-size: 16px;
+}
+header{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0, 0.1, 0.5, rgba(0, 0, 0, 0.1) ;
+    background-color: #f1d0a6;
+    border-radius: 25px;
+}
+.logo{
+    width: 120px;
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.icon{
+    display: flex;
+    
+}
+.icon div{
+    margin-right: 10px;
+}
+i{
+    font-size: 22px;
+}
+
+i:hover{
+    background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.new .transition{
+    width: 1200px;
+    display: block;
+}
+
+.out-text{
+    margin:0 100px;
+    padding:25px;
+}
+
+.container{
+    display: flex;
+    margin: 0 100px;
+    background-color: beige;
+    border-radius: 25px;
+}
+
+.container .right img{
+    border-radius: 25px;
+}
+
+.container .right img:hover{
+    transform: scale(1.1);
+    transition: transform o.5s ease-in-out;
+}
+#tag{
+    color:blue;
+    text-decoration: none;
+}
+
+#tag:hover{
+    background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.left{
+    width: 60%;
+    padding: 20px;
+}
+.right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-right: 20px;
+}
+.row{
+    width: 700px;
+    display: flex;
+}
+.row .col{
+    width: 40%;
+    margin-bottom: 20px;
+}
+.right h3{
+    margin-bottom: 30px;
+}
+.row .col img{
+    width: 100%;
+}
+.collum{
+    margin: 10px;
+}
+.imgnews{
+    width: 100%;
+}
+.left h2{
+    color: #bd945f;
+}
+
+#rainbow{
+    background: linear-gradient(to right, red, green, rgb(29, 129, 129), blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+p{
+    font-size: 18px;
+}
+
+.out-text a{
+    text-decoration: none;
+    color:#bd945f;
+}
+
+.out-text a:hover{
+    background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-us a{
+    text-decoration: none;
+    color:blue;
+}
+
+.about-us a:hover{
+    background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-us{
+    text-align: center;
+}
+
+section{
+    display:flex;
+    justify-content: space-around;
+    gap:20px;
+    margin:auto;
+}
+
+section .col{
+    width: 350px;
+    height:auto;
+    transition: transform o.5s ease-in-out;
+}
+
+section .col img{
+    border-radius: 25px;
+}
+
+section .col:hover img{
+    transform: scale(1.1);
+}
