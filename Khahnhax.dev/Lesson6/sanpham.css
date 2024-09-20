@@ -79,33 +79,19 @@ img{
     overflow: clip;
 }
 
-.banner-demo-item {
-  position: relative;
-  width: 1100px;
-  height: 500px;
-  overflow: hidden;
-}
-
-.banner-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  z-index: 1;
-}
-
 .banner-item.active {
   opacity: 1;
   z-index: 2;
 }
 
+.banner-item{
+  overflow-clip-margin: hidden;
+}
+
 .banner-btn {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+  bottom: 140px;
+  left: 78%;
   transform: translateX(-50%);
 }
 
@@ -190,7 +176,7 @@ footer {
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.75s linear;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .footer-section a img {
