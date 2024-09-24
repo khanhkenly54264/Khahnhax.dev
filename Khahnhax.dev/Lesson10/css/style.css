@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "OpenSans-Regular";
+}
+
+html, body{
+    /* font-family: "OpenSans-Regular"; */
+    font-size: 16px;
+}
+
+h1{
+    font-family: "OpenSans-SemiBold";
+}
+
+h2,h3,h4,h5,h6{
+    font-family: "OpenSans-Bold";
+}
+
+:root{
+    --color:#2c2e53;
+    --background-color:#f3f3f3;
+    --gray:#6c757d;
+}
+

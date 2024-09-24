@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url('../Fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url('../Fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url('../Fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../Fonts/OpenSans-Regular.ttf");
+}
