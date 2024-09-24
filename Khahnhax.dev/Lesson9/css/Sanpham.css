@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 22px;
+}
+body{
+    background-color: #ccc;
+    font-size: 16px;
+}
+header{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0, 0.1, 0.5, rgba(0, 0, 0, 0.1) ;
+    background-color: #f1d0a6;
+    border-radius: 25px;
+}
+.logo{
+    width: 120px;
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.icon{
+    display: flex;
+    
+}
+.icon div{
+    margin-right: 10px;
+}
+i{
+    font-size: 22px;
+}
+
+i:hover{
+    background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.product-main{
+    padding-bottom: 3rem;
+}
+
+.banner-btn .btn-buy{
+    color: #2c2e53;
+    padding:0.2rem 1.3rem;
+    overflow:visible;
+}
+
+.banner-demo-item img{
+    width: 100%;
+    height:25rem;
+}
+
+img{
+    vertical-align: middle;
+    overflow: clip;
+}
+
+.banner-item.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.banner-item{
+  overflow-clip-margin: hidden;
+}
+
+.banner-btn {
+  position: absolute;
+  bottom: 140px;
+  left: 78%;
+  transform: translateX(-50%);
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-section h3 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+  
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: margin-left 0.75s ease;
+}
+.footer-section ul li a:hover{
+  background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.75s linear;
+  margin-left: 15px;
+}
+
+.footer-section a img {
+  margin-right: 10px;
+}
+#mail, #phone{
+  text-decoration: none;
+  color:#ccc;
+}
+#phone:hover{
+  background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#chatluong-img{
+  margin:1rem;
+}
