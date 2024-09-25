@@ -1,0 +1,76 @@
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-section h3 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+  
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: margin-left 0.75s ease;
+}
+.footer-section ul li a:hover{
+  background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.75s linear;
+  margin-left: 15px;
+}
+
+.footer-section a img {
+  margin-right: 10px;
+}
+#mail, #phone{
+  text-decoration: none;
+  color:#ccc;
+}
+#phone:hover{
+  background: linear-gradient(to right, red, orange, yellow, green, aqua, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#chatluong-img{
+  margin:1rem;
+}
