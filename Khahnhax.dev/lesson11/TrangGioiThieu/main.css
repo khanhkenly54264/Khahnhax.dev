@@ -1,3 +1,4 @@
+
 body{
     background-color: #948989cc;
 }
@@ -53,6 +54,15 @@ i{
 i:hover{
     color:red;
 }
+
+h2, h3, h4, h5{
+    text-align: center;
+    color:rgb(205, 219, 219);
+}
+p{
+    color:#f3f3f3
+}
+
 
 
 
