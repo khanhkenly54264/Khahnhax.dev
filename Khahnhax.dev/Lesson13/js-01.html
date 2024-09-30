@@ -1,0 +1,33 @@
+<head>
+    <title>Các nhúng Javascript vào trang html</title>
+    <script>
+        function clickHere(){
+            document.body.style.backgroundColor='black';
+            document.body.style.color='white'
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Các nhúng Javascript vào trang html</h1>
+    </header>
+    
+    <section id="zone1">
+        <h2>Nhúng trực tiếp vào thuộc tính sự kiện của phần tử html</h2>
+        <button onclick="alert('bạn vừa clivk vào button!')">click here</button>
+    </section>
+
+    <section id="zone2"> 
+        <h2>Nhúng Js vào html thông qua thẻ script (head) </h2>
+        <button onclick="clickHere()">Tô màu</button>
+    </section>
+
+    <section id="zone3">
+        <h2>Nhúng file Js vào trang html</h2>
+        <button onclick="doiMau();">đổi màu</button>
+    </section>
+
+    <!-- Nhúng Js -->
+     <script src="javascripts/js-1.js"></script>
+</body>
+</html>
