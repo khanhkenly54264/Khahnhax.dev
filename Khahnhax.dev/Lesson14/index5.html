@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Click</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const ponits=[40,100,1,5,25,10];
+        document.getElementById("demo1").innerHTML=ponits;
+        
+        <!-- ponits.sort(function(a,b){return a - b})
+            document.getElementById
+        ponits.sort(function(a,b){return b - a})
+            document.getElementById -->
+
+        function myFunction(){
+            for(let i=ponits.length-1;i>0;i--){
+                let j = Math.floor(Math.random() * (i+1));
+                let k = ponits[i];
+                ponits[i]=ponits[j];
+                ponits[j] = k;
+            }
+            document.getElementById("demo1").innerHTML=ponits;
+        }
+
+        
+    </script>
+</body>
+</html>

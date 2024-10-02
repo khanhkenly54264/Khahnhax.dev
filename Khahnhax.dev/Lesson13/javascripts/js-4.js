@@ -89,21 +89,44 @@ delta = b * b - 4 * a * c;
 
 if (a === 0) {
     console.log("Đây không phải là phương trình bậc hai.");
-}
-if (delta < 0) {
+}else if (delta < 0) {
     console.log("Phương trình vô nghiệm.");
-}
-
-else if (delta === 0) {
+}else if (delta === 0) {
     res=x1 = -b / (2 * a);
     res=x2 = b/ (2*a);
     console.log("Phương trình nghiệm kép: ", x1, x2);
-}
-
-else {
+}else {
     res=x1 = (-b + Math.sqrt(delta)) / (2 * a);
     res= x2 = (-b - Math.sqrt(delta)) / (2 * a);
     console.log("Phương trình có hai nghiệm phân biệt:", x1 , x2)
 }
+
+// //Giai phuong trinh bac ba: ax^3+bx^2+cx+d=0
+
+// delt1 = b * b - 3 * a * c;
+// delta2 = c * c - 3 * b * d;
+
+//  if (a === 0) {
+//     console.log("Đây không phải là phương trình bậc ba.");
+//  }
+//  function newtonRaphson(x0) {
+//      const epsilon = 1e-7; // Sai số
+//      let x = x0;
+//      let fx, dfx;
+
+//      do {
+//          fx = a * x * x * x + b * x * x + c * x + d;
+//          dfx = 3 * a * x * x + 2 * b * x + c;
+//          x = x - fx / dfx;
+//      } while (Math.abs(fx) > epsilon);
+
+//      return x;
+//  }
+
+//  // Tìm một nghiệm gần đúng
+//  let x0 = 0; // Bắt đầu từ giá trị ban đầu
+//  let nghiem = newtonRaphson(x0);
+
+//  return `Một nghiệm gần đúng của phương trình là: x ≈ ${nghiem}`;
 
 

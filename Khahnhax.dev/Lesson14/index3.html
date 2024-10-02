@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Sử dụng length để để đếm các phần tử có trong mảng</p>
+    <p id="demo"></p>
+    <button onclick="myFunction()">ADD</button>
+
+    <script>
+        <!-- const hoaqua = ["CHuối", "Cam", "Quýt", "Bưởi"]
+        let size = hoaqua.length;//Sử dụng để đếm các phần tử trong mảng
+        document.getElementById("demo").innerHTML = size;
+
+        let flen = hoaqua.length;
+        let text = "<ul>";
+        for(let i = 0; i<flen; i++){
+            text += "<li>"+hoaqua[i]+"<li/>"
+        }
+        text +="</ul>"
+        document.getElementById("demo").innerHTML = text;
+
+        function myFunction(){
+            hoaqua.push("Đu đủ");
+            document.getElementById("demo").innerHTML=hoaqua;
+        }
+
+        let x= "";
+        const myObject ={
+            name:"Anh",
+            age:21,
+            hobbies:[
+                {sport:"Bóng đá", model:["Đá nhanh","Đá hay","Đá xoạc"]},
+                {sport:"Cầu lông", model:["LinDan","LeeChongWei","Asssnel"]},
+                {sport:"Bóng rổ", model:["Kobe","Curry","James"]}
+            ]
+        }
+        for(let i in myObject.hobbies){
+            x +="<h2>" + myObject.hobbies[i].sport+"</h2>"
+            for(let j in myObject.hobbies[i].model){
+                x += myObject.hobbies[i].model[j]+"<br>";
+            }
+        }
+        document.getElementById("demo").innerHTML=x; -->
+
+        const nums= [4,6,12,33,34];
+        let first = nums.find(myFunction);
+        document.getElementById("demo").innerHTML="Số lớn hơn 18 là "+first;
+        function myFunction(value, index, array){
+            return value>18;
+        }
+    </script>
+</body>
+</html>

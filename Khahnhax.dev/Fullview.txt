@@ -29,5 +29,8 @@ Lesson 11: CSS Responsive
 Lesson 12: exams 
 --------------------------------
 
-Lesson 13: Javadcript
+Lesson 13: Javascript
+--------------------------------
+
+Lesson 14: Javascript slick jquery
 --------------------------------
