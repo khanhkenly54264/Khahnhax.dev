@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menthod Opject</h1>
+    <p>To hien thi khai bao 1 bien</p>
+    <p id="demo"></p>
+    <p>Doi tuong co nhieu gia tri</p>
+    <p id="demo1"></p>
+    <p>Tao mot doi tuong trong sau do them 4 thuoc tinh</p>
+    <p id="demo2"></p>
+    <p>Phuong thuc co ham xac dinh luu tru trong gia tri thuoc tinh</p>
+    <p id="demo3"></p>
+
+    <script>
+        let car = "Honda Dream";
+        document.getElementById("demo").innerHTML = "Anh don em bang " + car;
+
+        const car1 = {type: "Y15zr", model:"72+12", color:"Black"};
+        document.getElementById("demo1").innerHTML = " Anh don em bang xe "+ car1.type+" Cau hinh trai: " + car1.model + " mau " + car1.color + " nhe em";
+
+        const person = {
+            FirstName:"Dan",
+            LastName:"Ngo",
+            fullName: function(){
+                return this.FirstName+" "+this.LastName;
+            }
+        };
+        person.name="Le";
+        person.FirstName="Dan";
+        person.LastName="Ngo";
+        person.age=18;
+        person.address="Hai Phong";
+        person.gender = "Woman ☕"
+
+        delete person.age;
+        const x=person;
+        x.birth = 2003;
+        document.getElementById("demo2").innerHTML = "Toi ten la "+person.name+ ". Toi vua moi "+person.age+". Toi que tai "+person.address+ ". Toi la "+person.gender;
+        document.getElementById("demo3").innerHTML = "Toi ten la "+person.fullName()+" Toi sinh nam "+x.birth;
+    </script>
+</body>
+</html>

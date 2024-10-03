@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p>Gan function voi mot gia tri khong xac dinh</p>
+    <p id="demo2"></p>
+    <p>Truy cap mot function ma khong co (). ham se tra ve function</p>
+    <p id="demo3"></p>
+    <script>
+        function myFunction(p1,p2){
+            return p1*p2;
+        }
+
+        let result = myFunction(4,3);
+
+        document.getElementById("demo").innerHTML=result;
+
+        function Seccond(f){
+            return (25/5)*(f-3);
+        }
+
+        let value = Seccond(6);
+
+        document.getElementById("demo1").innerHTML = value;
+
+        let v = Seccond();
+        document.getElementById("demo2").innerHTML = v;
+
+        let x = Seccond;
+        document.getElementById("demo3").innerHTML = x;
+    </script>
+</body>
+</html>

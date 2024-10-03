@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gio Viet Nam</h1>
+    <h3>Click de hien thi Thoi gian</h3>
+    <button onclick="document.getElementById('demo'),innerHTML=Date()">Hien thi thoi gian</button>
+    <p id="demo"></p>
+    <button onclick="innerHTML=Date()">Hien thi gio</button>
+    <p>Su dung function</p>
+    <button onclick="displayDate()">hien thi bang function</button>
+    <p id="demo1"></p>
+
+    <script>
+        function displayDate(){
+            document.getElementById("demo1").innerHTML=Date();
+        }
+    </script>
+</body>
+</html>
