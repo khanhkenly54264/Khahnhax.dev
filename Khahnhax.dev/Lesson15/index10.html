@@ -11,87 +11,129 @@
 </head>
 <body>
     <section class="regular slider">
-        <div class="card" style="width:400px;">
+        <div class="card" style="width: 400px;">
             <div class="card-body">
-                <img src="imgs/12.jpg" class="card-img-bottom"  width="100%" alt="">
-                <h4 class="card-title">Giuong chau au</h4>
+                <img class="card-img-bottom" src="imgs/12.jpg" alt="" width="100%">
+                <h4 class="card-title">Giường Châu Âu</h4>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <p class="card-text">(Size lon, trang sua)</p>
-                <b>8.990.000đ</b>
+                <p class="card-text">(Size lớn, trắng sữa)</p>
+                <b>8.990.000</b>
             </div>
         </div>
-        <div class="card" style="width:400px;">
+        <div class="card" style="width: 400px;">
             <div class="card-body">
-                <img src="imgs/13.jpg" class="card-img-bottom"  width="100%" alt="">
-                <h4 class="card-title">Ban lam viec</h4>
+                <img src="imgs/13.jpg" alt="" width="100%">
+                <h4 class="card-title">Bàn làm việc</h4>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <p class="card-text">(Size lon, trang sua)</p>
-                <b>8.990.000đ</b>
+                <p class="card-text">(Size lớn, trắng sữa)</p>
+                <b>8.990.000</b>
             </div>
         </div>
-        <div class="card" style="width:400px;">
+        <div class="card" style="width: 400px;">
             <div class="card-body">
-                <img src="imgs/14.jpg" class="card-img-bottom"  width="100%" alt="">
-                <h4 class="card-title">Tu quan ao</h4>
+                <img src="imgs/14.jpg" alt="" width="100%">
+                <h4 class="card-title">Giường Châu Âu</h4>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <p class="card-text">(Size lon, trang sua)</p>
-                <b>8.990.000đ</b>
+                <p class="card-text">(Size lớn, trắng sữa)</p>
+                <b>8.990.000</b>
             </div>
         </div>
-        <div class="card" style="width:400px;">
+        <div class="card" style="width: 400px;">
             <div class="card-body">
-                <img src="imgs/15.jpg" class="card-img-bottom"  width="100%" alt="">
-                <h4 class="card-title">Giuong chau au</h4>
+                <img src="imgs/15.jpg" alt="" width="100%">
+                <h4 class="card-title">Giường Châu Âu</h4>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <p class="card-text">(Size lon, trang sua)</p>
-                <b>8.990.000đ</b>
+                <p class="card-text">(Size lớn, trắng sữa)</p>
+                <b>8.990.000</b>
             </div>
         </div>
-        <div class="card" style="width:400px;">
+        <div class="card" style="width: 400px;">
             <div class="card-body">
-                <img src="imgs/12.jpg" class="card-img-bottom"  width="100%" alt="">
-                <h4 class="card-title">Giuong chau au</h4>
+                <img src="imgs/12.jpg" alt="" width="100%">
+                <h4 class="card-title">Giường Châu Âu</h4>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <p class="card-text">(Size lon, trang sua)</p>
-                <b>8.990.000đ</b>
+                <p class="card-text">(Size lớn, trắng sữa)</p>
+                <b>8.990.000</b>
             </div>
         </div>
-        <div class="card" style="width:400px;">
+        <div class="card" style="width: 400px;">
             <div class="card-body">
-                <img src="imgs/12.jpg" class="card-img-bottom"  width="100%" alt="">
-                <h4 class="card-title">Giuong chau au</h4>
+                <img src="imgs/12.jpg" alt="" width="100%">
+                <h4 class="card-title">Giường Châu Âu</h4>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
-                <p class="card-text">(Size lon, trang sua)</p>
-                <b>8.990.000đ</b>
+                <p class="card-text">(Size lớn, trắng sữa)</p>
+                <b>8.990.000</b>
             </div>
         </div>
     </section>
-
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="slick/slick/slick.js"></script>
+    <script src="./slick/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".regular").slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay:true,
+                autoplayspeed:2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            autoplay:true,
+                            autoplayspeed:2000,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            autoplay:true,
+                            autoplayspeed:2000,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay:true,
+                            autoplayspeed:2000,
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
 </body>
 </html>

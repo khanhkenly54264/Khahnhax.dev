@@ -32,15 +32,16 @@ html, body{
 
 .slick-next::before{
     color:black;
-    content:'<';
+    content:'>';
     background-color: #bd945f;
     border-radius: 50;
     padding:5px 5px 5px 5px;
     text-align: center;
 }
 
+
 .slivk-slide{
-    transition:  all aese-in-out 0.8s;
+    transition:  all ease-in-out 0.8s;
     opacity:2;
 }
 
