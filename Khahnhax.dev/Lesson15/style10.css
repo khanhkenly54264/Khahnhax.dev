@@ -25,7 +25,7 @@ html, body{
     color:black;
     content:'<';
     background-color: #bd945f;
-    border-radius: 50;
+    border-radius: 80px;
     padding:5px 5px 5px 5px;
     text-align: center;
 }
@@ -34,7 +34,7 @@ html, body{
     color:black;
     content:'>';
     background-color: #bd945f;
-    border-radius: 50;
+    border-radius: 80px;
     padding:5px 5px 5px 5px;
     text-align: center;
 }
