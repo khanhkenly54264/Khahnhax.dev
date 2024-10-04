@@ -2,7 +2,7 @@ $(document).ready(function() {
     let isEditing = false;
     let editingIndex = null;
 
-    // Dữ liệu ban đầu, nếu không có trong localStorage thì thêm vào
+    
     if (!localStorage.getItem('students')) {
         const initialStudents = [
             { studentId: "SV001", studentName: "Nguyễn Văn A", age: 20, sex: true, birthDate: "2002-04-23", birthPlace: "HN", address: "25, Vũ Ngọc Phan" },
@@ -13,17 +13,17 @@ $(document).ready(function() {
         localStorage.setItem('students', JSON.stringify(initialStudents));
     }
 
-    // Hàm lấy sinh viên từ localStorage
+    
     function getStudents() {
         return JSON.parse(localStorage.getItem('students')) || [];
     }
 
-    // Hàm lưu sinh viên vào localStorage
+    
     function saveStudents(students) {
         localStorage.setItem('students', JSON.stringify(students));
     }
 
-    // Hàm làm mới bảng sinh viên
+    
     function refreshTable() {
         const students = getStudents();
         $('#studentTable').html('');
@@ -45,7 +45,7 @@ $(document).ready(function() {
         });
     }
 
-    // Thêm hoặc sửa sinh viên
+   
     $('#saveStudentForm').submit(function(e) {
         e.preventDefault();
         const students = getStudents();
@@ -73,7 +73,7 @@ $(document).ready(function() {
         $('#saveStudentForm')[0].reset();
     });
 
-    // Hiển thị form để thêm sinh viên mới
+    
     $('#addStudentBtn').click(function() {
         $('#studentForm').show();
         $('#formTitle').text('Thêm mới sinh viên');
@@ -81,7 +81,7 @@ $(document).ready(function() {
         isEditing = false;
     });
 
-    // Sửa sinh viên
+    
     $(document).on('click', '.editBtn', function() {
         editingIndex = $(this).data('index');
         const students = getStudents();
@@ -98,7 +98,7 @@ $(document).ready(function() {
         isEditing = true;
     });
 
-    // Xem sinh viên
+    
     $(document).on('click', '.viewBtn', function() {
         const index = $(this).data('index');
         const students = getStudents();
@@ -106,7 +106,7 @@ $(document).ready(function() {
         alert(`ID: ${student.studentId}\nTên: ${student.studentName}\nTuổi: ${student.age}\nGiới tính: ${student.sex ? 'Nam' : 'Nữ'}\nNgày sinh: ${student.birthDate}\nNơi sinh: ${student.birthPlace}\nĐịa chỉ: ${student.address}`);
     });
 
-    // Xóa sinh viên
+   
     $(document).on('click', '.deleteBtn', function() {
         const index = $(this).data('index');
         let students = getStudents();
@@ -115,6 +115,6 @@ $(document).ready(function() {
         refreshTable();
     });
 
-    // Tải bảng sinh viên ban đầu
+ 
     refreshTable();
 });
