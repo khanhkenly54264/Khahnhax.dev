@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        #studentForm {
+            display: none;
+        }
+        .action-btn {
+            margin-right: 5px;
+        }
+        .search-bar, .sort-bar, .search-btn {
+            margin-bottom: 10px;
+        }
+        .sort-bar {
+            width: 180px;
+        }
+        .control-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quản lý sinh viên</h1>
+
+        <!-- Thanh Tìm kiếm, Sắp xếp, và Thêm mới sinh viên -->
+        <div class="control-row">
+            <button id="addStudentBtn" class="btn btn-primary">Thêm mới sinh viên</button>
+            <form class="d-flex" role="search" style="width:80%;">
+                <div class="col m-2">
+                    <input class="form-control" type="search" placeholder="Search Here" aria-label="Search">
+                </div>
+                <div class="col m-2">
+                    <button class="btn btn-primary" type="submit">Tìm kiếm</button>
+
+                </div>
+                <div style="display: flex;"></div>
+                    <select id="sortSelect" class="form-control sort-bar">
+                       <option value="none">Sắp xếp theo...</option>
+                        <option value="nameAsc">Tên A-Z</option>
+                        <option value="nameDesc">Tên Z-A</option>
+                        <option value="ageAsc">Tuổi tăng dần</option>
+                        <option value="ageDesc">Tuổi giảm dần</option>
+                </select>
+                </div>
+              </form>
+            
+            
+        </div>
+
+        <!-- Bảng Danh Sách Sinh Viên -->
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Mã sinh viên</th>
+                    <th>Tên sinh viên</th>
+                    <th>Tuổi</th>
+                    <th>Giới tính</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+
+        <!-- FormSinh Viên -->
+        <div id="studentForm">
+            <h2 id="formTitle">Thêm mới sinh viên</h2>
+            <form id="saveStudentForm">
+                <div class="mb-3">
+                    <label for="studentID" class="form-label">Mã sinh viên</label>
+                    <input type="text" class="form-control" id="studentID" required>
+                </div>
+                <div class="mb-3">
+                    <label for="studentName" class="form-label">Tên sinh viên</label>
+                    <input type="text" class="form-control" id="studentName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="studentAge" class="form-label">Tuổi</label>
+                    <input type="number" class="form-control" id="studentAge" required>
+                </div>
+                <div class="mb-3">
+                    <label for="studentGender" class="form-label">Giới tính</label>
+                    <select class="form-control" id="studentGender">
+                        <option value="true">Nam</option>
+                        <option value="false">Nữ</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="studentBirthDate" class="form-label">Ngày sinh</label>
+                    <input type="date" class="form-control" id="studentBirthDate" required>
+                </div>
+                <div class="mb-3">
+                    <label for="studentBirthPlace" class="form-label">Nơi sinh</label>
+                    <input type="text" class="form-control" id="studentBirthPlace" required>
+                </div>
+                <div class="mb-3">
+                    <label for="studentAddress" class="form-label">Địa chỉ</label>
+                    <input type="text" class="form-control" id="studentAddress" required>
+                </div>
+                <button type="submit" class="btn btn-success">Lưu</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
