@@ -1,0 +1,61 @@
+
+<head>
+    
+    <title>Lapguide07 - Ex2</title>
+
+</head>
+<body>
+    <style>
+        button{
+            cursor:pointer;
+        }
+    </style>
+    <section id="zone1">
+        <h1>Chọn màu chữ</h1>
+
+        <div class="btn">
+            <button value="red">Đỏ</button>
+            <button value="blue">Xanh</button>
+            <button value="yellow">Vàng</button>
+            <button value="gray">Ghi</button>
+            <button value="violet">Tím</button>
+        </div>
+        <div class="noi-dung">
+            <p>Lập trình web với PHP và MySQL</p>
+        </div>
+        <div class="reset-btn">
+            <button value="reset">Reset</button>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        alert('xin chao, toi la toi');
+    });
+
+    $('.btn > button').each(function(){
+        let valColor = $(this).attr("value");
+        $(this).css("background-color", valColor)
+            .css({
+                'boder':'1px solid' + valColor,
+                'padding':'.15rem 1rem'
+            });
+    
+    $('.btn button').click(function(){
+        let color = $(this).attr('value');
+        $('.noi-dung p').css({
+            'color':color
+        });
+    });
+
+    $('.reset-btn button').click(function(){
+        $('.noi-dung p').css('color', '');
+    });
+
+    });
+    </script>
+
+    
+</body>
