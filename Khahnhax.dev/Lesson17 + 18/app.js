@@ -2,13 +2,12 @@ $(document).ready(function() {
     let isEditing = false;
     let editingIndex = null;
 
-    
     if (!localStorage.getItem('students')) {
         const initialStudents = [
-            { studentId: "SV001", studentName: "Nguyễn Văn A", age: 20, sex: true, birthDate: "2002-04-23", birthPlace: "HN", address: "25, Vũ Ngọc Phan" },
-            { studentId: "SV002", studentName: "Nguyễn Văn B", age: 21, sex: false, birthDate: "2001-09-09", birthPlace: "ĐN", address: "1, Ngô Quyền" },
-            { studentId: "SV003", studentName: "Nguyễn Văn C", age: 19, sex: true, birthDate: "2003-07-07", birthPlace: "HCM", address: "1, Lý Tự Trọng" },
-            { studentId: "SV004", studentName: "Nguyễn Văn D", age: 29, sex: false, birthDate: "1995-07-07", birthPlace: "HCM", address: "1, Lý Tự Trọng" }
+            { studentId: "SV0001", studentName: "Nguyễn Văn A", age: 20, sex: true, birthDate: "2002-04-23", birthPlace: "HN", address: "25, Vũ Ngọc Phan" },
+            { studentId: "SV0002", studentName: "Nguyễn Văn B", age: 21, sex: false, birthDate: "2001-09-09", birthPlace: "ĐN", address: "1, Ngô Quyền" },
+            { studentId: "SV0003", studentName: "Nguyễn Văn C", age: 19, sex: true, birthDate: "2003-07-07", birthPlace: "HCM", address: "1, Lý Tự Trọng" },
+            { studentId: "SV0004", studentName: "Nguyễn Văn D", age: 29, sex: false, birthDate: "1995-07-07", birthPlace: "HCM", address: "1, Lý Tự Trọng" }
         ];
         localStorage.setItem('students', JSON.stringify(initialStudents));
     }
@@ -21,6 +20,18 @@ $(document).ready(function() {
     
     function saveStudents(students) {
         localStorage.setItem('students', JSON.stringify(students));
+    }
+
+    // sort option
+
+    if(sortOption === 'nameAsc'){
+        students.sort((a,b) => a.studentName.localeCompare(b.studentName));
+    }else if(sortOption === 'nameDesc'){
+        students.sort((a,b) => b.studentName.localeCompare(a.studentName));
+    }else if(sortOption === 'ageAsc'){
+        students.sort((a,b) => a.age - b.age); 
+    }else if(sortOption === 'ageDesc'){
+        students.sort((a,b) => b.age - a.age);
     }
 
     
@@ -106,7 +117,23 @@ $(document).ready(function() {
         alert(`ID: ${student.studentId}\nTên: ${student.studentName}\nTuổi: ${student.age}\nGiới tính: ${student.sex ? 'Nam' : 'Nữ'}\nNgày sinh: ${student.birthDate}\nNơi sinh: ${student.birthPlace}\nĐịa chỉ: ${student.address}`);
     });
 
-   
+    $('#sortSelect').change(function() {
+        const sortValue = $(this).val();
+        let students = getStudents();
+
+        if (sortValue === 'nameAsc') {
+            students.sort((a, b) => a.studentName.localeCompare(b.studentName));
+        } else if (sortValue === 'nameDesc') {
+            students.sort((a, b) => b.studentName.localeCompare(a.studentName));
+        } else if (sortValue === 'ageAsc') {
+            students.sort((a, b) => a.age - b.age);
+        } else if (sortValue === 'ageDesc') {
+            students.sort((a, b) => b.age - a.age);
+        }
+
+        refreshTable(students);
+    });
+
     $(document).on('click', '.deleteBtn', function() {
         const index = $(this).data('index');
         let students = getStudents();
