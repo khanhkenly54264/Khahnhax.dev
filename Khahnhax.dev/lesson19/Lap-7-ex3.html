@@ -12,15 +12,28 @@
         .img-small img {
             width: 250px;
             height: 150px;
+            cursor:pointer;
         }
 
-        .img-small img.selected {
-            border: 3px solid red;
+        .img-border{
+            border: 5px solid blue;
         }
+
+        .img-large img {
+            width: 100%;
+            height: 35rem;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+        
+        .img-large img.zoom-in {
+            transform: scale(1.05);
+            opacity: 0;
+        }
+        
     </style>
 
     <header class="container border my-2">
-        <h1>Anh Thien Nhien Dep</h1>
+        <h1 style="color:green">Anh Thien Nhien Dep</h1>
     </header>
 
     <section id="zone1" class="container border my-2 p-2">
@@ -42,16 +55,22 @@
     <script>
         $().ready(function (e) {
             $('.img-small img').click(function () {
-                
-                $('.img-small img').removeClass('selected');
-
-                
-                $(this).addClass('selected');
-
-                
+                       
+                $('.img-small img').removeClass('img-border');
+                $(this).addClass('img-border');
+        
                 let img_src = $(this).attr('src');
-                $('.img-large img').attr('src', img_src);
+        
+                //zoom-in 
+                $('.img-large img').addClass('zoom-in');
+        
+
+                setTimeout(function () {
+                    $('.img-large img').attr('src', img_src);
+                    $('.img-large img').removeClass('zoom-in');
+                }, 500); //time
             });
         });
+        
     </script>
 </body>

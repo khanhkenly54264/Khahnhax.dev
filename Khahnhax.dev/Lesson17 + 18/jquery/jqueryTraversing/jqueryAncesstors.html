@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ancestors{
+            display: block;
+            border: 2px solid blue;
+            color: yellow;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ancestors">
+        <div style="width:500 px;">
+            div(great-grandparent)
+            <ul>ul(grandparent)
+                <li>li(direct parent)
+                    <span>span</span>
+                </li>
+            </ul>
+        </div>
+        <div style="width: 500px;">
+            div(great-grandparent)
+            <ul>ul(grandparent)
+                <p>
+                    p(direct parent)
+                    <apan>span</apan>
+                </p>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("span").parentsUntil(div).css({"color":"red", "border":"2px solid red"});
+        });
+    </script>
+</body>
+</html>

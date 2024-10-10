@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<style>
+    .descendants{
+        display:block;
+        border: 2px solid #ccc;
+        color:#ccc;
+        padding: 5px;
+        margin:15px;
+    }
+</style>
+
+<body>
+    <div class="descendants">
+        div(thanh phan div)
+        <p>
+            p(phan tu con)
+            <span>
+                span(phan thu span)
+            </span>
+        </p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("div").children().css({"color":"red",})
+        })
+    </script>
+</body>
+</html>
