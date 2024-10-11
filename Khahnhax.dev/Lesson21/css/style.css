@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body{
+    font-size: 16px;
+    font-family: "Tahoma";
+    background-color: #ccc;
+}
+.bg-while{
+    background-color: #fff;
+}
+.productItem{
+    background-color: #ccc;
+    margin-bottom: 1rem;
+}
+.p-content{
+    text-align: center;
+    padding: 1rem 0;
+}
+p{
+    margin: 0;
+}
+.productItem img{
+    height: 15rem;
+}
+.productItem a{
+    text-decoration: none;
+    color: #2c2e53;
+}
