@@ -1,10 +1,12 @@
-//api: http://apixm.devmaster.vn/api/Products
+    
+    //api: http://apixm.devmaster.vn/api/Products
 
 var products = [];
 const img_url="http://apixm.devmaster.vn";
 $(document).ready(function () {
   console.log("reay....");
-  //call api
+
+    //call api
   $.ajax({
     type: "GET",
     dataType: "json",
@@ -17,8 +19,10 @@ $(document).ready(function () {
       fn_showProduct(dataProduct)
     },
   });
-  //show data
+
+    //show data
   const fn_showProduct = (data) => {
+
     //fill data to html
     $('#product-list').html("");
     let list="";
@@ -35,10 +39,11 @@ $(document).ready(function () {
                         </div>
                     </div>
                 </div>
-    `;
-    
+                  `;
+
     list=list+item;
     });
     $('#product-list').html(list);
+
   };
 });
